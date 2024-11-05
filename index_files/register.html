@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi Pemilu GM 2024</title>
+  <link rel="stylesheet" href="regis.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Bagian Kiri: Logo -->
+    <div class="logo-section">
+      <img src="img/epicentrum-logo.jpeg" alt="Epicentrum Logo" class="logo">
+    </div>
+    
+    <!-- Bagian Kanan: Form Registrasi -->
+    <div class="register-section">
+      <h2>Registrasi Pemilu GM 2024</h2>
+      <form action="register.php" method="post">
+        <label for="nim">NIM</label>
+        <input type="text" id="nim" name="nim" required placeholder="Masukkan NIM">
+    
+        <label for="redeem_code">Redeem Code</label>
+        <input type="text" id="redeem_code" name="redeem_code" required placeholder="Masukkan Redeem Code">
+    
+        <button type="submit">Daftar</button>
+    </form>
+      <p>Sudah punya akun? <a href="login.php" class="register-link">Login di sini</a></p>
+    </div>
+  </div>
+</body>
+</html>

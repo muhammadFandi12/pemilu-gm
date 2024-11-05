@@ -1,0 +1,116 @@
+/* Mengatur lebar dan tinggi halaman penuh */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .notification {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none; /* Sembunyikan notifikasi secara default */
+}
+.notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Bagian Logo */
+  .logo-section {
+    background-color: #118FA1; /* Sesuaikan dengan warna primary */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    max-width: 80%; /* Sesuaikan ukuran logo */
+    max-height: 80%;
+  }
+  
+  /* Bagian Form Login */
+  .login-section {
+    flex: 1;
+    padding: 50px;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-section h2 {
+    color: #0E4047; /* Sesuaikan dengan warna primary */
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #0E4047; /* Sesuaikan dengan warna primary */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #118FA1; /* Warna lain untuk efek hover */
+  }
+  
+  /* Styling untuk tautan pendaftaran */
+  .register-link {
+    margin-top: 20px; /* Jarak atas untuk memisahkan dari form */
+    font-size: 14px; /* Ukuran font */
+    color: #0E4047; /* Warna untuk tautan */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s; /* Transisi halus untuk warna */
+  }
+  
+  .register-link:hover {
+    color: #E5C777; /* Warna saat hover */
+  }
+  
+
+  .candidate-photo {
+    width: 100%;            /* Mengisi lebar kontainer sepenuhnya */
+    height: auto;           /* Menjaga aspek rasio gambar */
+    border-radius: 8px;     /* Menambahkan border radius jika diperlukan */
+    object-fit: cover;      /* Memastikan gambar mengisi area tanpa distorsi */
+    max-width: 150px;       /* Membatasi lebar maksimum gambar */
+    max-height: 150px;      /* Membatasi tinggi maksimum gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan bayangan agar terlihat lebih menarik */
+  }
+  
